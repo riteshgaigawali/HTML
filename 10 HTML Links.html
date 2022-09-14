@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Links</title>
+    <!-- HTML Links - Different Colors -->
+    <style>
+        /* 
+        An unsvisited link is underlined and blue.
+        An visited link is underlined and purple.
+        An active link is underline and red.
+         */
+        a:link {
+            color: green;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: pink;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: red;
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HTML Link - Syntax -->
+    <a href="http://www.google.com">Link Text</a> <br>
+
+    <!-- HTML Links - The target Attributes -->
+    <a href="https://www.google.com" target="_self">Open in Self</a> <!-- _self attribute --> <br>
+    <a href="https://www.google.com" target="_blank">Open in Blank</a> <!-- _blank attribute --> <br>
+    <a href="https://www.google.com" target="_parent">Open in Parent</a> <!-- _parent attribute --> <br>
+    <a href="https://www.google.com" target="_top">Open in Top</a> <!-- _top attribute --> <br>
+
+    <!-- Absolute URL's vs Relative URL's -->
+    <h2>Absolute URL</h2>
+    <a href="http://www.google.com" target="_blank">Example of Absolute URL</a>
+    <h2>Relative URL</h2>
+    <a href="09 HTML Styles - CSS.html" target="_blank">Example of Relative URL</a>
+
+    <!-- HTML Links - Use an Image as a link. --> <br>
+    <a href="https://www.instagram.com/dhanraj_metkar/" target="_blank">
+        <img src="images\img_dani.jpg" alt="Dhanya photo" style="width: 420px; height: 420px;">
+    </a>
+
+    <!-- Link to an Email Address --> <br>
+    <a href="mailto:riteshgaigawali2001@gmail.com">Send a E-mail</a>
+
+    <!-- Button as a link --> <br>
+    <button onclick="document.location='01 HTML Basics.html'">HTML Tutorials</button>
+
+    <!-- Link Title --> <br>
+    <a href="https://google.com" target="_blank" title="Go To Google.com">Title for a Link</a>
+
+    <!-- HTML Links - Create Bookmarks -->
+    <h2 id="C4">Chapter 4</h2>
+    <a href="#c4">Jump to chapter 4</a> <br>
+    <a href="09 HTML Styles - CSS.html#para">Jump to another page.</a>
+
+</body>
+
+</html>
